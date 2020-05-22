@@ -1,0 +1,11 @@
+<% if @preference.allow_create_artists %>
+  <h1>This application allows the creation of artists</h1>
+<% else %>
+  <h1>This application doesn't allow the creation of artists</h1>
+<% end %>
+
+<% if @preference.allow_create_songs %>
+  <h1>This application allows the creation of songs</h1>
+<% else %>
+  <h1>This application doesn't allow the creation of songs</h1>
+<% end %>
