@@ -9,7 +9,7 @@ class ArtistsController < ApplicationController
 
   def new
     Preference.all.each do |p|
-    if p.allow_create_artists == true
+    if p.allow_create_artists 
       @artist = Artist.new
     else
       redirect_to artists_path
