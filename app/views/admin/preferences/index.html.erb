@@ -1,0 +1,7 @@
+<h3>Your Preferences</h3>
+
+<p>Allow Artist Creation? <%= @preference.allow_create_artists %></p>
+
+<p>Allow Song Creation? <%= @preference.allow_create_songs %></p>
+
+<p><%= link_to "Edit Preferences", edit_admin_preference_path(1) %></p>
