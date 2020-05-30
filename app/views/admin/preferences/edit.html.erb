@@ -1,0 +1,11 @@
+<h3>Set your Preference</h3>
+
+<%= form_for(@preference, url: admin_preference_path) do |f| %>
+
+<p>Allow Artist Creation? <%= f.select "allow_create_artists", options_for_select([true, false]) %></p>
+
+<p>Allow Song Creation? <%= f. select "allow_create_songs", options_for_select([true, false]) %></p>
+
+<%= f.submit "Submit" %>
+
+<% end %>
